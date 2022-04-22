@@ -1,4 +1,4 @@
-require('babel-register')
+
 const {success, error} = require('functions')
 const bodyParser = require('body-parser')
 const express = require('express')
