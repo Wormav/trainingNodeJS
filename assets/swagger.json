@@ -1,0 +1,101 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "nodeJS",
+    "version": "1.0.0",
+    "license": {
+      "name": "ISC"
+    },
+    "description": "API REST pour gérer des utilisateurs"
+  },
+  "basePath": "/api/v1",
+  "host": "localhost:8080",
+  "tags": [
+    {
+      "name": "members",
+      "description": "Méthodes permettant de gérer les utilisateurs"
+    }
+  ],
+  "paths": {
+    "members/{id}": {
+      "get": {
+        "summary": "members/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "put": {
+        "summary": "members/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "delete": {
+        "summary": "members/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      }
+    },
+    "/api/v1/members": {
+      "get": {
+        "summary": "members",
+        "parameters": [
+          {
+            "name": "max",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "post": {
+        "summary": "members",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      }
+    }
+  }
+  
+}
